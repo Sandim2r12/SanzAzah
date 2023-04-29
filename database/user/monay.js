@@ -1,6 +1,6 @@
   const fs = require('fs')
   let _monayOrg = JSON.parse(fs.readFileSync('./database/user/monay.json'))
-  let monayAwal = 0
+  let monayAwal = 100000
   const addInventoriMonay = (sender) => {
         const obj = {id: sender, monay: monayAwal}
          _monayOrg.push(obj)

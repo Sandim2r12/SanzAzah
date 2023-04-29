@@ -1,6 +1,6 @@
 const fs = require('fs')
   let _limitOrg = JSON.parse(fs.readFileSync('./database/user/limit.json'))
-  let limitAwal = 25;
+  let limitAwal = 250;
   const addInventoriLimit = (sender) => {
         const obj = {id: sender, limit: limitAwal}
          _limitOrg.push(obj)
